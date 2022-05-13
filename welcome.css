@@ -1,0 +1,37 @@
+
+body{
+    background-image:url("welcome.webp");
+    height: fit-content;
+    width: fit-content;
+}
+p.first{
+    text-align:center;
+    font-size:20px;
+}
+p.animation{
+    cursor:pointer;
+    text-align:center;
+    font-size:60px;
+    
+}
+
+@keyframes around {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:1000px; top:0px;}
+    50%  {background-color:blue; left:1000px; top:500px;}
+    75%  {background-color:green; left:0px; top:500px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+ 
+  
+  p.animation{
+    width: 500px;
+    height: 100px;
+    background-color: aqua;
+    position: absolute;
+    animation-name: around;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+  }

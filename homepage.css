@@ -1,0 +1,191 @@
+.heading{
+    text-align: center;
+    font-family: roboto;
+    font-size:60px;
+    font-weight: bold;
+    margin:60px;
+}
+
+.list{
+    font-size:20px;
+    float: right;
+}
+form{
+    margin-left:300px;
+    font-size:20px;
+}
+
+input[text]{
+    width:30%;
+    padding:12px;
+    margin-left:50px;
+    border:1px solid black;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+select{
+    font-size:20px;
+    font-family: Roboto;
+    margin-left:50px;
+}
+
+.button{
+    background-color: #026280;
+    color: white;
+    padding: 14px 20px;
+    margin:8px 0px;
+    border: none;
+    width:10%;
+    font-family:Roboto;
+    font-size:20px;
+}
+.button:hover{
+    cursor:pointer;
+    opacity:0.7;
+}
+.serve{
+    font-size:25px;
+
+}
+header{
+    background-color: goldenrod;
+}
+body{
+    background-image: url("homepage.jpg");
+}
+
+
+
+
+/* */
+.help {
+    
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .help .popuptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .help .popuptext::after {
+    content:"";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+
+  .help .show {
+    visibility: visible;
+    animation: fadeIn 1s;
+  }
+  
+
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  nav{
+    background-color: darkslategrey;
+     position :relative; 
+     height:12%;
+   
+      text-indent: 10px;
+    padding-left:12px;
+    padding-right:16px;
+    overflow:visible;
+    position: -webkit-sticky;
+    height: 65px;
+    top: -60px;
+
+  }
+  .bar{
+      word-spacing: 100PX;
+      font-size:20px;
+    padding-left:20px;
+    padding-right:16px;
+    overflow:visible;
+    position: relative;
+    height: 65px;
+    top: 10px;
+  }
+
+  .fa {
+    padding: 100px;
+   
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: -40px 40px;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+    font-size: 30px;
+  }
+  .fa-facebook {
+    
+    color: white;
+    font-size: 30px;
+  }
+  
+  .fa-twitter {
+    
+    color: cyan;
+    font-size: 30px;
+  }
+  
+  .fa-google {
+    
+    color: white;
+    font-size: 30px;
+  }
+  
+  .fa-snapchat {
+    font-size: 30px;
+    color: yellow;
+  }
+  .fa-instagram {
+    font-size: 30px;
+    color: palevioletred;
+  }
+
+  footer{
+      margin-top: 200px;
+      font-size: 45px;
+
+      padding-top: auto;
+      background-color: goldenrod;
+  }
+
+ .name{
+     all:unset;
+     cursor: pointer;
+ }
