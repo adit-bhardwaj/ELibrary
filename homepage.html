@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="english">
+    <head>
+        <link rel="stylesheet" href="homepage.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>ARTIC KNOWLEDGE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+    </head>
+    <body>
+        <header>
+            <h1 class="heading">E - PUSTAKALAYA <i class="glyphicon glyphicon-book"></i></h1>
+            
+        </header>
+        <nav >
+            <div class="bar">
+                <a href="https://www.juit.ac.in/" class="click1">HOME</a>
+                <a href="aboutus.html" class="click2">ABOUTUS</a>
+                <a href="login.html"class ="click3">SIGNOUT</a></li>
+                <li class="help" onclick="myFunction()">HELPDESK
+                    <span class="popuptext" id="myPopup">PLEASE VISIT OUR ABOUT SECTION FOR MORE DETAILS</span>
+                </li>
+            </div>
+        </nav>
+        <section>
+            <form role="search" id="form">
+                <div class="name">
+                    <l>BOOK NAME: </l>
+                    <input type="search" id="query2" name="q"  required/>
+                    <br>
+                    <button>Search</button>
+                </div>
+        </form>
+        </section>
+        <article>
+
+        </article>
+            <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                <a href="#"><i class="fa fa-google"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-snapchat"></i></a>
+              </footer>
+    </body>
+    <script>const f = document.getElementById('form');
+        const q = document.getElementById('query2');
+        const google = 'https://www.amazon.in/Kindle-Store-Amazon-E-book/s?k=';
+  
+        function submitted(event) {
+          event.preventDefault();
+          const url = google + '+' +'+' + q.value;
+          const win = window.open(url, '_blank');
+          win.focus();
+        }
+        f.addEventListener('submit', submitted);
+
+        //popup
+        function myFunction() {
+          var help = document.getElementById("myPopup");
+          help.classList.toggle("show");
+        }
+        </script>
+</html>

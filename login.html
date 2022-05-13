@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "ENGLISH">
+    <head>
+        <title>page_2_login</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="body_image">
+            <h1>ENTER YOUR DETAILS</h1>
+        <form action="homepage.html">
+            <div class="image">
+            </div>
+            <div class="form">
+                <label class="category" for="category">TYPE OF USER</label>
+                <select name="category" id="category" required>
+                <option value="null">GUEST</option>
+                <option value="student">STUDENT</option>
+                <option value="staff">STAFF</option>
+                </select>
+                <br>
+                <br>
+                <label for="user_name">USERNAME</label>
+                <input type ="text" placeholder="ENTER THE USER NAME" name="user_name" required>
+                <br>
+                <br>
+                <label for="user_password">PASSWORD</label>
+                <input type="password" placeholder="ENTER THE PASSWORD" name="user_password" required>
+                <i class="eye" id="togglePassword"></i>
+            </div>
+            <div class ="form">
+                <button type="submit" >LOGIN</button>
+                <button type="button" class="cancel_button">CANCEL</button>
+            </div>
+        </form>
+        </div>
+    </body>
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+ 
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
+    </script>
+</html>
